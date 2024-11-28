@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Menjadi grayscale</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">Grayscale Converter</h1>
+      <div class="link">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <div class="header">
+      <h2 class="judul">Image to Grayscale Converter</h2>
+      <h2 class="subjudul">Ubah fotomu menjadi grayscale dengan mudah</h2>
+      <p class="deskripsi">
+        format gambar yang didukung: PNG, JPEG, JPG. Size maksimum: 10MB
+      </p>
+    </div>
+
+    <div class="canvas-container">
+      <div class="preview-container">
+        <div class="preview-box">
+          <h3>Gambar Asli</h3>
+          <canvas id="original-canvas"></canvas>
+        </div>
+        <div class="preview-box">
+          <h3>Hasil Grayscale</h3>
+          <canvas id="grayscale-canvas"></canvas>
+        </div>
+      </div>
+      <div class="button-container">
+        <button id="back-btn" class="button button-secondary">Kembali</button>
+        <button id="gs-btn" class="button">Buat Grayscale</button>
+        <button id="download-btn" class="button" style="display: none;">Download</button>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <div class="drag-area">
+        <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        <header>Drag & Drop untuk Mengunggah File</header>
+        <span>Atau</span>
+        <button id="btn" class="button">Pilih File</button>
+        <input
+          type="file"
+          multiple="false"
+          accept="image/*"
+          id="finput"
+          hidden
+        />
+      </div>
+    </div>
+
+    <div class="contoh-container">
+      <h1 class="contoh">Contoh Gambar</h1>
+      <div class="contoh-card-container">
+        <div class="card">
+          <img src="assets/image/kucing-color.jpg" alt="Contoh gambar kucing berwarna" width="300" />
+          <p class="text-card">Before</p>
+        </div>
+        <div class="card">
+          <img src="assets/image/kucing-gray.png" alt="Contoh gambar kucing grayscale" width="300" />
+          <p class="text-card">After</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="assets/js/grayscale.js"></script>
+  </body>
+</html>

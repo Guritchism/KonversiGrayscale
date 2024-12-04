@@ -47,7 +47,7 @@ body {
 /* Header Section */
 .header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0rem 1rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -288,7 +288,7 @@ input[type="file"] {
   }
 
   .header {
-    padding: 1.5rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .judul {
@@ -344,7 +344,7 @@ input[type="file"] {
 
 .judul{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 10px;
   font-weight: 600;
   font-family: "poppins", sans-serif;
   font-style: normal;
@@ -353,7 +353,7 @@ input[type="file"] {
 .subjudul{
   text-align: center;
   font-size: large;
-  margin-top: 15px;
+  margin-top: 10px;
   font-family: "poppins", sans-serif;
   font-style: normal;
   color: #686D76;
@@ -365,7 +365,7 @@ input[type="file"] {
   font-family: "poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
-  padding: 30px 50px;
+  padding: 15px 50px;
 }
 
 .link
@@ -576,7 +576,7 @@ img {
 }
 
 .button {
-  margin-top: auto;
+  margin-top: 0px;
   padding: 8px;
   background-color: #000B58;
   color: white;

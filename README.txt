@@ -1,6 +1,6 @@
 # Grayscale Image Converter
 
-Aplikasi web untuk mengkonversi gambar berwarna menjadi grayscale menggunakan HTML5 Canvas dan operasi matriks.
+Aplikasi web untuk mengkonversi gambar berwarna menjadi grayscale menggunakan operasi matriks.
 
 ## Cara Kerja Algoritma
 
